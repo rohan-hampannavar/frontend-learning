@@ -1,94 +1,153 @@
-Good. This is exactly how you should track. Now don’t half-do it.
+# DAY 001 — Setup + Git Init + LinkedIn + GitHub Profile
 
-Here’s your **Day 001 (Setup + Git + Profiles)** filled properly based on your roadmap 
+**Date: 17-03-26** 
+<br>
+**Hours Spent: 5 Hours**
 
 ---
 
-# Day 001 - Setup + Git + Profile
+## 🎯 Daily Goal
 
-Date:
-Hours spent:
+GitHub live with first commit. LinkedIn published. Profile README visible.
 
-## What I studied
+---
 
-* Installed **VS Code, Node.js (LTS), Git**
-* Verified installation:
+## ⚙️ Environment Setup
 
-  * `node -v`
-  * `npm -v`
-  * `git --version`
-* Git basics:
+Installed:
 
-  * `git init`
-  * `git add`
-  * `git commit`
-  * `git push`
-* Git config:
+* VS Code (Stable)
+* Node.js (LTS)
+* Git
 
-  * `git config --global user.name`
-  * `git config --global user.email`
-* Created GitHub account + repository (`frontend-practice`)
-* Cloned repo locally and pushed first commit
-* LinkedIn setup:
-
-  * Professional headline
-  * Basic profile (photo, bio, skills)
-* GitHub Profile README:
-
-  * Intro
-  * Skills (HTML, CSS, JS – even if beginner)
-  * Current goal
-
-## What clicked today
-
-* Git is just **tracking changes + saving versions**
-* Workflow is simple:
-
-  * change → add → commit → push
-* GitHub is your **public proof of work**, not just storage
-
-## Code I actually wrote
+Verified:
 
 ```bash
+node -v
+npm -v
+git --version
+```
+
+All commands returned valid versions.
+
+---
+
+## 🔧 Git Configuration
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+git config --list
+```
+
+Confirmed:
+
+* user.name ✔
+* user.email ✔
+
+---
+
+## 📁 Project Setup
+
+```bash
+mkdir frontend-practice
+cd frontend-practice
 git init
-git add .
-git commit -m "first commit"
+```
+
+Created initial file:
+
+```bash
+echo "# Frontend Practice" > README.md
+```
+
+---
+
+## 🚀 First Commit + Push
+
+```bash
+git add README.md
+git commit -m "docs: initialize repo with README"
+```
+
+Connected to GitHub:
+
+```bash
+git remote add origin <repo-url>
 git branch -M main
-git remote add origin <your-repo-link>
 git push -u origin main
 ```
 
-## What confused me
+---
 
-* Difference between:
+## 🧠 Core Git Understanding
 
-  * `git add` vs `git commit`
-  * local repo vs GitHub repo
-* Why we need `origin` and `main`
+Git has 3 stages:
 
-## How I unblocked myself
+Working Directory → Staging Area → Repository
 
-* Practiced the full flow 2–3 times from scratch
-* Deleted repo → recreated → pushed again
-* Watched one short Git workflow video and repeated steps
-
-## Tomorrow
-
-* [ ] Learn HTML semantic structure
-* [ ] Build 3–5 basic HTML pages (no CSS)
-* [ ] Use proper tags (header, nav, main, footer)
-* [ ] Commit everything to GitHub
+* `git add` → moves changes to staging
+* `git commit` → saves snapshot
+* `git push` → sends to GitHub
 
 ---
 
-Now reality check:
+## 🧪 Practice Done
 
-If you didn’t actually:
+* Used `git add filename` vs `git add .`
+* Created multiple commits
+* Checked history:
 
-* push code to GitHub
-* create README
-* publish LinkedIn
+```bash
+git log --oneline
+```
 
-then this day is **NOT DONE**. No pretending.
+---
 
-Next: you want me to fill **Day 002 (HTML Forms)** properly like this—or you’ll do it and I’ll audit it?
+## 🌐 Profile Setup
+
+### GitHub
+
+* Profile photo added
+* Bio set: *Frontend Developer in training*
+* Location added
+* Profile README repo created (same as username)
+
+### LinkedIn
+
+* Headline set:
+  **Aspiring Frontend Developer | HTML · CSS · JavaScript · React**
+* Profile updated with photo + summary
+
+---
+
+## ❌ Mistakes / Issues
+
+(Be specific — no vague statements)
+
+Example:
+
+* git push failed due to missing remote
+* forgot to set git config initially
+
+---
+
+## 🔧 Fixes
+
+* Added remote using `git remote add origin`
+* Reconfigured Git identity
+
+---
+
+## 📌 Proof
+
+* GitHub Repo: frontend-learning/daily-notes/phase-1
+* GitHub Profile: github.com/rohan-hampannavar
+* LinkedIn: https://www.linkedin.com/in/rohanhampannavar/ 
+
+---
+
+## 🚀 Next (Day 2)
+
+* HTML semantic structure
+* Build 5 pages (no div soup)
